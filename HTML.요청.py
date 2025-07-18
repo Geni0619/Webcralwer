@@ -1,6 +1,13 @@
 import requests
 import time
 from requests.exceptions import RequestException, Timeout, HTTPError
+import ssl
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+from urllib.request import HTTPError
+from urllib.error import URLError
+from urllib.error import HTTPError
+
 
 # 1. 요청할 URL과 헤더 설정
 url = "https://namu.wiki/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8"
